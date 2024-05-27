@@ -39,7 +39,7 @@
                         <div class="col-md-6">
                             <input type="text" class="form-control @error('amount') is-invalid @enderror" id="amount" name="amount" value="{{ $donatur->amount }}">
 
-                            @if ($errors->has('amo'))
+                            @if ($errors->has('amount'))
                             <span class="text-danger">{{ $errors->first('amount') }}</span>
                             @endif
                         </div>
