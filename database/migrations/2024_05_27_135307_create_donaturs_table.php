@@ -13,6 +13,9 @@ return new class extends Migration
     {
         Schema::create('donaturs', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
+            $table->integer('amount');
+            $table->text('description');
             $table->timestamps();
         });
     }
