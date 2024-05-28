@@ -22,7 +22,7 @@
                     @endcanany
 
                     @canany(['create-donatur', 'edit-donatur','delete-donatur'])
-                    <a class="btn btn-warning" href="{{ route('donaturs.index') }}"><i class="bi bi-bag"></i> Manage Donaturs</a>
+                    <a class="btn btn-warning" href="{{ route('donaturs.index') }}"><i class="bi bi-coin"></i> Manage Donaturs</a>
                     @endcanany
 
                     <p>&nbsp;</p>
