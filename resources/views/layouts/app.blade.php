@@ -54,8 +54,7 @@
                         @endcanany
                         
                         @canany(['create-donatur', 'edit-donatur', 'delete-donatur'])
-                        <li><a class="nav-link" href="{{ route('donaturs.index') }}">Manage
-                                Donaturs</a></li>
+                        <li><a class="nav-link" href="{{ route('donaturs.index') }}">Manage Donaturs</a></li>
                         @endcanany
                         
                         <li class="nav-item dropdown">

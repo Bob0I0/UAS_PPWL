@@ -27,7 +27,7 @@ class DonaturController extends Controller
     public function index(): View
     {
         return view('donaturs.index', [
-            'donaturs' => donatur::latest()->paginate(3)
+            'donaturs' => donatur::latest()->paginate(4)
         ]);
     }
     /**
