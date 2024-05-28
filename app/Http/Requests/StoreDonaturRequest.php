@@ -23,7 +23,7 @@ class StoreDonaturRequest extends FormRequest
     {
         return [
             'name' => 'required|string|max:250',
-            'amount' => 'rquired|integer',
+            'amount' => 'required|integer',
             'description' => 'required|string'
         ];
     }
