@@ -1,4 +1,5 @@
 @extends('layouts.app')
+@extends('layouts.backend')
 @section('content')
 <div class="card">
     <div class="card-header">Manage Roles</div>
