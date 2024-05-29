@@ -1,7 +1,10 @@
 <?php
 
+use App\Http\Controllers\DonaturController;
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\RoleController;
+use Illuminate\Support\Facades\Auth;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -17,4 +20,14 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Auth::routes();
 
+Route::middleware('auth')->group(function () {
+    Route::get('/home', [App\Http\Controllers\HomeController::class,'index'])->name('home');
+
+Route::resources([
+    'roles' => RoleController::class,
+    'donaturs' => DonaturController::class,
+    // 'permissions' => PermissionController::class,
+]);
+});
